@@ -1,0 +1,28 @@
+{
+  "box_categories": {
+    "DO": "Documents",
+    "KN": "Knickknacks",
+    "OS": "Office Supplies",
+    "CL": "Clothing",
+    "KT": "Kitchen Items",
+    "BK": "Books",
+    "EL": "Electronics",
+    "TO": "Tools",
+    "ME": "Memorabilia",
+    "DC": "Decor Items",
+    "TR": "Toys",
+    "PI": "Pictures",
+    "AN": "Antiques",
+    "GE": "Genealogy Files",
+    "MG": "Magazines/Newspapers"
+  },
+  "locations": {
+    "L": "Living Room",
+    "M": "Mom's Room",
+    "G1": "Guest Room 1",
+    "G2": "Guest Room 2",
+    "S": "Storage Room"
+  },
+  "box_format": "CC##[OptionalLocation]",
+  "examples": ["DO3M", "KT2L", "AN4G1"]
+}

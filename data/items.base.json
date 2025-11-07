@@ -1,0 +1,42 @@
+{
+  "catalog_version": "2025.01.06.1000",
+  "source": "Stephen Household Archive",
+  "items": [
+    {
+      "id": "it_20250106_000001",
+      "box_id": "DO1M",
+      "box_friendly": "Documents - Mom's Room",
+      "category": "Documents > Family > Sample",
+      "item_name": "Sample Family Document",
+      "quantity": 1,
+      "description": "This is a sample item to demonstrate the catalog structure. Replace with real items by processing photos with the Python script.",
+      "notes": "This is just example data.",
+      "captions": ["Sample document for testing"],
+      "people": ["Sample Person"],
+      "date_found": "2025-01-06",
+      "image_files": [
+        {
+          "full": "placeholder.jpg",
+          "thumb": "placeholder.jpg"
+        }
+      ],
+      "ocr": {
+        "box_id_detected": "DO1M",
+        "raw_text": "Sample OCR text"
+      },
+      "pub": null,
+      "hashes": {
+        "sha1": "sample_hash_12345",
+        "phash": null
+      },
+      "box_history": [
+        {
+          "box_id": "DO1M",
+          "from": "2025-01-06",
+          "to": null
+        }
+      ],
+      "tags": ["sample", "demo"]
+    }
+  ]
+}

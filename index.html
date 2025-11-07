@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mom's Household Archive Catalog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Mom's Household Archive Catalog</h1>
+            <p class="subtitle">Stephen Family Archive - Browse, Search, and Manage</p>
+        </header>
+
+        <div class="controls">
+            <div class="search-section">
+                <input
+                    type="search"
+                    id="searchInput"
+                    placeholder="Search items, descriptions, people, tags..."
+                    aria-label="Search catalog"
+                >
+                <button id="clearSearch" aria-label="Clear search">Clear</button>
+            </div>
+
+            <div class="filter-section">
+                <select id="boxFilter" aria-label="Filter by box">
+                    <option value="">All Boxes</option>
+                </select>
+
+                <select id="categoryFilter" aria-label="Filter by category">
+                    <option value="">All Categories</option>
+                </select>
+
+                <select id="peopleFilter" aria-label="Filter by person">
+                    <option value="">All People</option>
+                </select>
+
+                <select id="sortBy" aria-label="Sort by">
+                    <option value="date-desc">Newest First</option>
+                    <option value="date-asc">Oldest First</option>
+                    <option value="name-asc">Name (A-Z)</option>
+                    <option value="name-desc">Name (Z-A)</option>
+                    <option value="box-asc">Box (A-Z)</option>
+                </select>
+            </div>
+
+            <div class="action-section">
+                <button id="toggleEditMode" class="btn-secondary">
+                    <span id="editModeIcon">✏️</span> Enable Edit Mode
+                </button>
+                <button id="exportEdits" class="btn-primary" style="display: none;">
+                    💾 Export Edits
+                </button>
+                <span id="catalogInfo" class="info-text"></span>
+            </div>
+        </div>
+
+        <div id="statsBar" class="stats-bar">
+            <span id="itemCount">Loading catalog...</span>
+            <span id="editStatus"></span>
+        </div>
+
+        <main id="catalogGrid" class="catalog-grid">
+            <!-- Items will be inserted here by JavaScript -->
+        </main>
+
+        <div id="noResults" class="no-results" style="display: none;">
+            <p>No items found matching your search.</p>
+        </div>
+
+        <footer>
+            <p>Household Archive Catalog - HTML Edition v<span id="catalogVersion">1.0.0</span></p>
+            <p>Last updated: <span id="lastUpdated">N/A</span></p>
+        </footer>
+    </div>
+
+    <!-- Item Detail Modal -->
+    <div id="itemModal" class="modal" style="display: none;" role="dialog" aria-labelledby="modalTitle">
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Close modal">&times;</button>
+            <div id="modalBody">
+                <!-- Item details will be inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
